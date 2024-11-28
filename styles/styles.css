@@ -1,11 +1,11 @@
-nav {
-    background-color: darkblue;
-    padding: 10px;
+:root {
+    --background-color: rgb(241, 241, 244);
+    --padding: 10px;
 }
 nav a {
-    color: white;
+    color: rgb(138, 17, 17);
     display: block;
-    padding: 20px;
+    padding: var(--padding);
 }
 h1 {
     color: darkblue;
@@ -14,11 +14,11 @@ img {
     width: 150px;
     height: auto;
     border: 1px solid black;
-    padding: 2px;
+    padding: var(--padding);
     box-shadow: 0 0 30px gray;
 }
 p {
-    padding: 0;
+    padding: var(--padding);
 }
 main {
     max-width: 840px;
@@ -27,8 +27,8 @@ aside {
     width: 20rem;
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.2); /* 1 */
-    padding: 1rem;
-    background-color: #eee;
+    padding: var(--padding);
+    background-color: var(--backgroud-color);
     color: #333;
     text-align: center;
 }
