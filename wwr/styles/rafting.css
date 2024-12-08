@@ -56,11 +56,11 @@ header {
     height: auto;
 }
 
-/* Position h1 
+/* Position h1 */
 .hero h1 {
     position: absolute; /* Allows absolute placement */
     top: 20%; /* Adjusts placement */
-    left: 10%;
+    left: 10%; /* Adjusts placement */
 }
 
 /* Position article */
