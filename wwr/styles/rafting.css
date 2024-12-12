@@ -5,74 +5,125 @@
     --secondary-accent-color:#BEF490; 
     --font-color: #3201ae; /* Soft yellow for text */
     --background-color: #ffffff; /* White background */
-}
-/* Heading Font: Barriecito */
-h1, h2, h3 {
+  }
+  
+  /* Heading Font: Barriecito */
+  h1, h2, h3 {
     font-family: 'Barriecito', cursive;
-}
-
-/* Text Font: Parisienne */
-body, p {
+  }
+  
+  /* Text Font: Parisienne */
+  body, p {
     font-family: 'Parisienne', cursive;
-}
-
-h1, h2 {
+  }
+  
+  h1, h2 {
     color: var(--primary-color);
-}
-
-h1 {
+  }
+  
+  h1 {
     font-size: 2.5em;
     margin: 20px 0;
-}
-
-h2 {
+  }
+  
+  h2 {
     font-size: 2em;
     margin: 10px 0;
     color: var(--secondary-color);
-}
-
-p {
+  }
+  
+  p {
     font-size: 1.2em;
     margin: 15px 0;
     color: var(--font-color);
-}
-
-header {
+  }
+  
+  /* Header Styles */
+  header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
     padding: 20px;
-    text-align: center;
     background-color: var(--secondary-color);
     border-bottom: 3px solid var(--primary-color);
-}
-.sociallinks a {
-    text-decoration: none; /* Removes underlines */
-}
-.container {
-    max-width: 1200px;
-}
-/* Hero Image */
-.hero img {
-    display: block;
-    width: 100%; /* Scales the image to the container width */
-    height: auto;
-}
-
-/* Position h1 */
-.hero h1 {
-    position: absolute; /* Allows absolute placement */
-    top: 20%; /* Adjusts placement */
-    left: 10%; /* Adjusts placement */
-}
-
-/* Position article */
-.hero article {
-    position: absolute; /* Allows absolute placement */
-    bottom: 10%; /* Adjusts placement */
-    left: 10%;
-    background-color: rgba(0, 0, 0, 0.6); /* Adds readable background */
-}
-
-/* Float image in article */
-.hero article img {
-    float: right; /* Floats image to the right of text */
-    margin-left: 10px; /* Adds space between text and image */
-}
+  }
+  
+  header img {
+    grid-area: 1 / 1;
+  }
+  
+  header nav {
+    grid-area: 1 / 2;
+  }
+  
+  header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav li {
+    margin-right: 20px;
+  }
+  
+  header nav a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Hero Section Styles */
+  .hero {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* History Section Styles */
+  .history-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .history-section .text-content,
+  .history-section .image-content {
+    background-color: var(--primary-color);
+    padding: 20px;
+    color: white;
+  }
+  
+  /* Adventures Section Styles */
+  .adventures-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .adventures-section figure {
+    flex: 1 1 25%;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .adventures-section figcaption {
+    font-size: 0.8em;
+    color: #666;
+  }
+  
+  /* Footer Styles */
+  footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--secondary-color);
+  }
+  
+  footer .sociallinks {
+    display: flex;
+  }
+  
+  footer img {
+    margin-left: 10px;
+  }
