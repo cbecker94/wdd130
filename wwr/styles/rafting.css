@@ -1,10 +1,10 @@
 :root {
-    --primary-color: #4073A0; /* Dark teal */
-    --secondary-color: #a1d9ab; /* Lighter teal */
-    --accent-color: #85B6C1; /* Soft mint */
-    --secondary-accent-color:#BEF490; 
-    --font-color: #3201ae; /* Soft yellow for text */
-    --background-color: #354f37; /* White background */
+    --primary-color: #4073A0; 
+    --secondary-color: #354f37;
+    --accent-color: #85B6C1;
+    --secondary-accent-color:#3201ae; 
+    --font-color: #BEF490;
+    --background-color: #354f37;
   }
   
   /* Heading Font: Barriecito */
