@@ -330,6 +330,20 @@ footer p {
   margin-right: 10px;
 }
 
+fieldset {
+  border: 1px solid var(--primary-color);
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+}
+
+legend {
+  font-size: 1.2em;
+  color: var(--font-color);
+  padding: 0 5px;
+}
+
 .contact-form .checkbox-label {
   color: var(--font-color); /* Ensure checkbox label matches */
 }
