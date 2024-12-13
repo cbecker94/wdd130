@@ -1,129 +1,179 @@
 :root {
-    --primary-color: #4073A0; 
-    --secondary-color: #354f37;
-    --accent-color: #85B6C1;
-    --secondary-accent-color:#3201ae; 
-    --font-color: #BEF490;
-    --background-color: #354f37;
-  }
+  --primary-color: #184e77; /* Forest Green */
+  --secondary-color: #e0fbfc; /* Light Cyan */
+  --accent-color: #dab6fc; /* Soft Lavender */
+  --secondary-accent-color: #311d3f; /* Deep Plum */
+  --font-color: #003d4d; /* Dark Teal */
+  --background-color: #1b263b; /* Navy Blue */
+}
   
-  /* Heading Font: Barriecito */
-  h1, h2, h3 {
-    font-family: 'Barriecito', cursive;
-  }
-  
-  /* Text Font: Parisienne */
-  body, p {
-    font-family: 'Parisienne', cursive;
-  }
-  
-  h1, h2 {
-    color: var(--primary-color);
-  }
-  
-  h1 {
-    font-size: 2.5em;
-    margin: 20px 0;
-  }
-  
-  h2 {
-    font-size: 2em;
-    margin: 10px 0;
-    color: var(--secondary-color);
-  }
-  
-  p {
-    font-size: 1.2em;
-    margin: 15px 0;
-    color: var(--font-color);
-  }
-  
-  /* Header Styles */
-  header {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-    padding: 20px;
-    background-color: var(--secondary-color);
-    border-bottom: 3px solid var(--primary-color);
-  }
-  
-  header img {
-    grid-area: 1 / 1;
-  }
-  
-  header nav {
-    grid-area: 1 / 2;
-  }
-  
-  header nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header nav li {
-    margin-right: 20px;
-  }
-  
-  header nav a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  /* Hero Section Styles */
-  .hero {
-    background-color: var(--secondary-color);
-    padding: 20px;
-    text-align: center;
-  }
-  
-  /* History Section Styles */
-  .history-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-  
-  .history-section .text-content,
-  .history-section .image-content {
-    background-color: var(--primary-color);
-    padding: 20px;
-    color: white;
-  }
-  
-  /* Adventures Section Styles */
-  .adventures-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .adventures-section figure {
-    flex: 1 1 25%;
-    margin: 10px;
-    text-align: center;
-  }
-  
-  .adventures-section figcaption {
-    font-size: 0.8em;
-    color: #666;
-  }
-  
-  /* Footer Styles */
-  footer {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 20px;
-    background-color: var(--secondary-color);
-  }
-  
-  footer .sociallinks {
-    display: flex;
-  }
-  
-  footer img {
-    margin-left: 10px;
-  }
+ /* Heading Font: Barriecito */
+h1, h2, h3 {
+  font-family: 'Barriecito', cursive;
+}
+
+/* Text Font: Parisienne */
+body, p {
+  font-family: 'Parisienne', cursive;
+}
+
+h1, h2 {
+  color: var(--primary-color);
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 2em;
+  margin: 10px 0;
+  color: var(--accent-color); /* Better contrast for h2 */
+  text-align: center;
+}
+
+p {
+  font-size: 1.2em;
+  margin: 15px 0;
+  color: var(--font-color);
+}
+
+/* Header Styles */
+header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--background-color);
+  border-bottom: 3px solid var(--primary-color);
+}
+
+header img {
+  grid-area: 1 / 1;
+}
+
+header nav {
+  grid-area: 1 / 2;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav li {
+  margin-right: 20px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--secondary-color); /* Ensures link visibility */
+  font-weight: bold; /* Optional for better readability */
+}
+
+/* Hero Section Styles */
+.hero {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  text-align: center;
+}
+
+.hero p {
+  color: var(--primary-color); /* Ensures good contrast */
+}
+
+/* History Section Styles */
+.history-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--background-color); /* Background color */
+  text-align: center;
+}
+.history-section h2 {
+  margin-bottom: 20px;
+}
+.history-section .text-content p {
+  font-size: 1.2em;
+  color: #fff; /* White text for the paragraph */
+  line-height: 1.6; /* Adds some line height for better readability */
+}
+
+
+.history-section h2 {
+  font-size: 2em;
+  color: var(--accent-color); /* Heading color */
+}
+
+.history-section p {
+  font-size: 1.2em;
+  color: var(--font-color);
+}
+
+/* Adventures Section Styles */
+.adventures-section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Five equal-width columns */
+  gap: 10px; /* Space between images */
+  padding: 20px;
+  background-color: var(--background-color); /* Ensure good background contrast */
+}
+
+.adventures-section h2 {
+  grid-column: 1 / -1; /* Span the entire grid width */
+  margin-bottom: 20px;
+  text-align: center; /* Center the "Adventure Awaits You!" heading */
+}
+
+.adventures-section figure {
+  margin: 0; /* Remove default margins */
+  text-align: center; /* Center the caption text */
+  background-color: var(--accent-color); /* Softer lavender for better contrast */
+  color: var(--secondary-accent-color); /* Adjust caption text color */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Ensures content doesn't overflow figure borders */
+}
+
+.adventures-section img {
+  width: 100%; /* Make images span their container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove inline spacing below the image */
+}
+
+.adventures-section figcaption {
+  padding: 10px;
+  font-size: 0.9em;
+  font-weight: bold; /* Increase visibility with bold text */
+  color: var(--background-color); /* Dark Navy Blue for strong contrast */
+  background-color: var(--secondary-color); /* Light Cyan for better readability */
+  border-top: 2px solid var(--primary-color); /* Optional: add separation line for captions */
+  border-radius: 0 0 8px 8px; /* Match figure’s rounded corners */
+}
+
+
+/* Footer Styles */
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--primary-color); /* Dark footer */
+  color: var(--secondary-color); /* Light text for visibility */
+}
+
+footer .sociallinks {
+  display: flex;
+}
+
+footer img {
+  margin-left: 10px;
+}
+
+footer p {
+  margin: 0;
+  color: var(--secondary-color); /* Text in footer, visible on dark background */
+}
