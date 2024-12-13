@@ -177,3 +177,177 @@ footer p {
   margin: 0;
   color: var(--secondary-color); /* Text in footer, visible on dark background */
 }
+
+/* Contact Information Section */
+.company-info {
+  background-color: var(--secondary-accent-color); /* Deep Plum background */
+  color: var(--font-color); /* Dark Teal text for readability */
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+}
+
+/* Contact Info Heading */
+.company-info h3 {
+  font-size: 2em; /* Larger heading for prominence */
+  color: var(--primary-color); /* Forest Green color for the heading */
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold; /* Make heading bold for emphasis */
+}
+
+/* Paragraphs for Contact Info */
+.company-info p {
+  font-size: 1.5em; /* Larger text for better visibility */
+  margin: 10px 0;
+  color: #fff; /* White text for high contrast on Deep Plum */
+  text-align: center; /* Center the text for uniformity */
+}
+
+/* Links Styling */
+.company-info a {
+  color: var(--primary-color); /* Forest Green links for visibility */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em; /* Slightly larger for better visibility */
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.company-info a:hover {
+  color: var(--accent-color); /* Soft Lavender on hover for interactivity */
+}
+
+/* Adding a strong background to each info block for better readability */
+.company-info .info-block {
+  background-color: var(--secondary-color); /* Light Cyan background for each block */
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Subtle shadow for separation */
+}
+
+/* Address, Phone, and Email Details Styling */
+.company-info .info-block p {
+  font-size: 1.4em; /* Increase font size for better readability */
+  color: var(--font-color); /* Dark Teal text color for readability */
+  margin: 10px 0;
+  text-align: center; /* Center the contact details */
+}
+
+/* Google Map Section */
+.google-map {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.google-map iframe {
+  border: 2px solid var(--primary-color); /* Border around map for definition */
+  border-radius: 8px; /* Rounded corners for map */
+  width: 100%;
+  height: 300px; /* Adjust the map height */
+}
+
+
+/* Employee Profiles */
+.employee-profiles {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.employee-profiles .employee {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.employee-profiles img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--primary-color); /* Border to make employee profiles stand out */
+}
+
+.employee-profiles p {
+  margin-top: 10px;
+  color: var(--primary-color); /* Forest Green for employee name/title */
+  font-weight: bold;
+}
+
+/* Contact Form */
+.contact-form {
+  background-color: var(--secondary-color); /* Light cyan background for contrast */
+  color: var(--background-color); /* Navy Blue text for visibility */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid var(--primary-color);
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: #fff; /* White background for inputs for better readability */
+  color: var(--font-color); /* Dark Teal text inside inputs */
+}
+
+.contact-form button {
+  background-color: var(--primary-color); /* Forest Green background */
+  color: var(--secondary-color); /* Light Cyan text on the button */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: var(--accent-color); /* Soft Lavender on hover */
+  color: var(--background-color); /* Dark Navy Blue text on hover */
+}
+
+.contact-form label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  color: var(--font-color); /* Dark Teal for label text */
+}
+
+.contact-form .radio-group label {
+  display: block;
+  margin: 5px 0;
+  color: var(--font-color); /* Dark Teal for radio label */
+}
+
+.contact-form .radio-group input {
+  margin-right: 10px;
+}
+
+.contact-form .checkbox-label {
+  color: var(--font-color); /* Ensure checkbox label matches */
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .employee-profiles {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .employee-profiles .employee {
+    margin-bottom: 20px;
+  }
+}
+
+footer a {
+  color: var(--secondary-color); /* Adjust color as needed */
+  text-decoration: underline; /* Ensure visibility */
+}
+

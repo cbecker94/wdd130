@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Information | White River Rafting</title>
+        <meta name="description" content="The companies contact infromation, address, email, phone number.">
+        <meta name="author" content="Charity Becker">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Parisienne&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/rafting.css">
+    </head>
+  <body>
+    <header>
+      <img src="images/skelletons.jpg" alt="Skelletons">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="trips.html">Trips</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Company Information -->
+      <section class="company-info">
+        <h2>Contact Information</h2>
+        <p><strong>Address:</strong> 123 Adventure Lane, River City, RC 56789</p>
+        <p><strong>Phone:</strong> (123) 456-7890</p>
+        <p><strong>Email:</strong> <a href="mailto:info@whiteriverrafting.com">info@whiteriverrafting.com</a></p>
+    </section>
+
+    <!-- Google Map -->
+    <section class="google-map">
+        <h3>Find Us on the Map</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21209.893799097576!2d-113.99438302595199!3d48.502771340060534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5368901555555555%3A0xaf16bc2215c55dec!2sGlacier%20National%20Park!5e0!3m2!1sen!2sus!4v1734066375377!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+      
+    
+    <!-- Employee Profiles -->
+    <section class="employee-profiles">
+        <h2>Meet Our Awesome Team</h2>
+        <div class="employee">
+            <img src="images/employee1.webp" alt="Bart Ender - Customer Support">
+            <p>Bart Ender - Customer Support</p>
+        </div>
+        <div class="employee">
+            <img src="images/employee2.webp" alt="Ted Manwalkin - Reservations Manager">
+            <p>Ted Manwalkin - Reservations Manager</p>
+        </div>
+        <div class="employee">
+            <img src="images/employee3.webp" alt="Yolanda Plaina - Marketing Specialist">
+            <p>Yolanda Plaina - Marketing Specialist</p>
+        </div>
+    </section>
+
+
+      <!-- Contact Form -->
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="purpose">Purpose of Message:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="purpose" value="General Inquiry" required> General Inquiry</label>
+                    <label><input type="radio" name="purpose" value="Reservation Question"> Reservation Question</label>
+                    <label><input type="radio" name="purpose" value="Website Suggestion"> Website Suggestion</label>
+                </div>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <label for="subscribe">
+                    <input type="checkbox" id="subscribe" name="subscribe"> Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+      <p>&copy;2024White Water RaftingCharity Becker </p>
+      <nav class="sociallinks">
+        <a href="https://facebook.com" target="_blank" rel="noopener">
+          <img src="images/facebook.webp" alt="Facebook logo">
+        </a>
+        <a href="https://tiktok.com" target="_blank" rel="noopener">
+          <img src="images/tiktok.webp" alt="TikTok logo">
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener">
+          <img src="images/instagram.webp" alt="Instagram logo">
+        </a>
+      </nav>
+      <!-- Link to the wireframe -->
+    <p>
+        <a href="https://www.figma.com/proto/Z0bbtK6lZqQls0fWAr4R79/Untitled?node-id=1-2&node-type=canvas&t=50N04o23BsZ3O3hl-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" 
+        target="_blank" rel="noopener" 
+        style="color: var(--secondary-color); text-decoration: underline;">
+        View Contact Us Wireframe
+        </a>
+    </p>
+    </footer>
+  </body>
+</html>
