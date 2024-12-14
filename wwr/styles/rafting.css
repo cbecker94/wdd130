@@ -6,8 +6,8 @@
   --font-color: #003d4d; /* Dark Teal */
   --background-color: #1b263b; /* Navy Blue */
 }
-  
- /* Heading Font: Barriecito */
+
+/* Heading Font: Barriecito */
 h1, h2, h3 {
   font-family: 'Barriecito', cursive;
 }
@@ -27,12 +27,13 @@ h1 {
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: #dab6fc;
 }
 
 h2 {
   font-size: 2em;
   margin: 10px 0;
-  color: var(--accent-color);
+  color: aqua;
   text-align: center;
 }
 
@@ -75,7 +76,7 @@ header nav li {
 header nav a {
   text-decoration: none;
   color: var(--secondary-color);
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 /* Hero Section Styles */
@@ -86,7 +87,7 @@ header nav a {
 }
 
 .hero p {
-  color: var(--primary-color); /* Ensures good contrast */
+  color: var(--primary-color);
 }
 
 /* History Section Styles */
@@ -95,22 +96,20 @@ header nav a {
   grid-template-columns: 1fr;
   gap: 20px;
   padding: 20px;
-  background-color: var(--background-color); /* Background color */
+  background-color: var(--background-color);
   text-align: center;
 }
+
 .history-section h2 {
   margin-bottom: 20px;
+  font-size: 2em;
+  color: var(--accent-color);
 }
+
 .history-section .text-content p {
   font-size: 1.2em;
-  color: #fff; /* White text for the paragraph */
-  line-height: 1.6; /* Adds some line height for better readability */
-}
-
-
-.history-section h2 {
-  font-size: 2em;
-  color: var(--accent-color); /* Heading color */
+  color: #fff;
+  line-height: 1.6;
 }
 
 .history-section p {
@@ -121,43 +120,43 @@ header nav a {
 /* Adventures Section Styles */
 .adventures-section {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* Five equal-width columns */
-  gap: 10px; /* Space between images */
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
   padding: 20px;
-  background-color: var(--background-color); /* Ensure good background contrast */
+  background-color: var(--background-color);
 }
 
 .adventures-section h2 {
-  grid-column: 1 / -1; /* Span the entire grid width */
+  grid-column: 1 / -1;
   margin-bottom: 20px;
-  text-align: center; /* Center the "Adventure Awaits You!" heading */
+  text-align: center;
+  color: #dab6fc;
 }
 
 .adventures-section figure {
-  margin: 0; /* Remove default margins */
-  text-align: center; /* Center the caption text */
-  background-color: var(--accent-color); /* Softer lavender for better contrast */
-  color: var(--secondary-accent-color); /* Adjust caption text color */
-  border-radius: 8px; /* Rounded corners */
-  overflow: hidden; /* Ensures content doesn't overflow figure borders */
+  margin: 0;
+  text-align: center;
+  background-color: var(--accent-color);
+  color: var(--secondary-accent-color);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .adventures-section img {
-  width: 100%; /* Make images span their container */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Remove inline spacing below the image */
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .adventures-section figcaption {
   padding: 10px;
   font-size: 0.9em;
-  font-weight: bold; /* Increase visibility with bold text */
-  color: var(--background-color); /* Dark Navy Blue for strong contrast */
-  background-color: var(--secondary-color); /* Light Cyan for better readability */
-  border-top: 2px solid var(--primary-color); /* Optional: add separation line for captions */
-  border-radius: 0 0 8px 8px; /* Match figure’s rounded corners */
+  font-weight: bold;
+  color: var(--background-color);
+  background-color: var(--secondary-color);
+  border-top: 2px solid var(--primary-color);
+  border-radius: 0 0 8px 8px;
 }
-
 
 /* Footer Styles */
 footer {
@@ -165,8 +164,8 @@ footer {
   justify-content: flex-end;
   align-items: center;
   padding: 20px;
-  background-color: var(--primary-color); /* Dark footer */
-  color: var(--secondary-color); /* Light text for visibility */
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 footer .sociallinks {
@@ -179,65 +178,60 @@ footer img {
 
 footer p {
   margin: 0;
-  color: var(--secondary-color); /* Text in footer, visible on dark background */
+  color: var(--secondary-color);
 }
 
 /* Contact Information Section */
 .company-info {
-  background-color: var(--secondary-accent-color); /* Deep Plum background */
-  color: var(--font-color); /* Dark Teal text for readability */
+  background-color: var(--secondary-accent-color);
+  color: var(--font-color);
   padding: 30px;
   margin-bottom: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Contact Info Heading */
 .company-info h3 {
-  font-size: 2em; /* Larger heading for prominence */
-  color: var(--primary-color); /* Forest Green color for the heading */
+  font-size: 2em;
+  color: var(--primary-color);
   margin-bottom: 20px;
   text-align: center;
-  font-weight: bold; /* Make heading bold for emphasis */
+  font-weight: bold;
 }
 
-/* Paragraphs for Contact Info */
 .company-info p {
-  font-size: 1.5em; /* Larger text for better visibility */
+  font-size: 1.5em;
   margin: 10px 0;
-  color: #fff; /* White text for high contrast on Deep Plum */
-  text-align: center; /* Center the text for uniformity */
+  color: #fff;
+  text-align: center;
 }
 
-/* Links Styling */
 .company-info a {
-  color: var(--primary-color); /* Forest Green links for visibility */
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.2em; /* Slightly larger for better visibility */
+  font-size: 1.2em;
   display: inline-block;
   margin-top: 10px;
 }
 
 .company-info a:hover {
-  color: var(--accent-color); /* Soft Lavender on hover for interactivity */
+  color: #dab6fc;
 }
 
-/* Adding a strong background to each info block for better readability */
 .company-info .info-block {
-  background-color: var(--secondary-color); /* Light Cyan background for each block */
+  background-color: var(--secondary-color);
   padding: 15px;
   margin: 15px 0;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Subtle shadow for separation */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
-/* Address, Phone, and Email Details Styling */
 .company-info .info-block p {
-  font-size: 1.4em; /* Increase font size for better readability */
-  color: var(--font-color); /* Dark Teal text color for readability */
+  font-size: 1.4em;
+  color: var(--font-color);
   margin: 10px 0;
-  text-align: center; /* Center the contact details */
+  text-align: center;
 }
 
 /* Google Map Section */
@@ -247,12 +241,11 @@ footer p {
 }
 
 .google-map iframe {
-  border: 2px solid var(--primary-color); /* Border around map for definition */
-  border-radius: 8px; /* Rounded corners for map */
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
   width: 100%;
-  height: 300px; /* Adjust the map height */
+  height: 300px;
 }
-
 
 /* Employee Profiles */
 .employee-profiles {
@@ -271,19 +264,22 @@ footer p {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid var(--primary-color); /* Border to make employee profiles stand out */
+  border: 4px solid var(--primary-color);
 }
 
 .employee-profiles p {
-  margin-top: 10px;
-  color: var(--primary-color); /* Forest Green for employee name/title */
-  font-weight: bold;
+  color: #333333;
+  background-color: #F0F8FF;
+  padding: 8px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1rem;
 }
 
 /* Contact Form */
 .contact-form {
-  background-color: var(--secondary-color); /* Light cyan background for contrast */
-  color: var(--background-color); /* Navy Blue text for visibility */
+  background-color: var(--secondary-color);
+  color: var(--background-color);
   padding: 20px;
   border-radius: 8px;
 }
@@ -300,34 +296,34 @@ footer p {
 
 .contact-form input,
 .contact-form textarea {
-  background-color: #fff; /* White background for inputs for better readability */
-  color: var(--font-color); /* Dark Teal text inside inputs */
+  background-color: #fff;
+  color: var(--font-color);
 }
 
 .contact-form button {
-  background-color: var(--primary-color); /* Forest Green background */
-  color: var(--secondary-color); /* Light Cyan text on the button */
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .contact-form button:hover {
-  background-color: var(--accent-color); /* Soft Lavender on hover */
-  color: var(--background-color); /* Dark Navy Blue text on hover */
+  background-color: var(--accent-color);
+  color: var(--background-color);
 }
 
 .contact-form label {
   display: block;
   font-size: 1.2em;
   margin-bottom: 5px;
-  color: var(--font-color); /* Dark Teal for label text */
+  color: var(--font-color);
 }
 
 .contact-form .radio-group label {
   display: block;
   margin: 5px 0;
-  color: var(--font-color); /* Dark Teal for radio label */
+  color: var(--font-color);
 }
 
 .contact-form .radio-group input {
@@ -349,7 +345,7 @@ legend {
 }
 
 .contact-form .checkbox-label {
-  color: var(--font-color); /* Ensure checkbox label matches */
+  color: var(--font-color);
 }
 
 /* Media Queries for Mobile */
@@ -365,7 +361,60 @@ legend {
 }
 
 footer a {
-  color: var(--secondary-color); /* Adjust color as needed */
-  text-decoration: underline; /* Ensure visibility */
+  color: var(--secondary-color);
+  text-decoration: underline;
 }
 
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-family: 'Arial', sans-serif;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+.google-map h3 {
+  color: #1B1F23;
+  background-color: #E8F0FE;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.contact-form h2 {
+  color: #004466;
+  background-color: #E6F7FF;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+button[type="submit"] {
+  background-color: #004466;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0077AA;
+}
+
+button[type="submit"]:focus {
+  outline: 3px solid #E6F7FF;
+  outline-offset: 2px;
+}
