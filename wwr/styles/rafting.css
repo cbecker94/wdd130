@@ -202,12 +202,12 @@ footer p {
 .company-info p {
   font-size: 1.5em;
   margin: 10px 0;
-  color: #fff;
+  color: #311d3f;
   text-align: center;
 }
 
 .company-info a {
-  color: #fff;
+  color: #311d3f;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.2em;
@@ -252,6 +252,7 @@ footer p {
   display: flex;
   justify-content: space-around;
   margin-bottom: 40px;
+  background-color: #0a5f74;
 }
 
 .employee-profiles .employee {
@@ -268,7 +269,7 @@ footer p {
 }
 
 .employee-profiles p {
-  color: #333333;
+  color: #1b1f23;
   background-color: #F0F8FF;
   padding: 8px;
   border-radius: 5px;
@@ -278,7 +279,7 @@ footer p {
 
 /* Contact Form */
 .contact-form {
-  background-color: var(--secondary-color);
+  background-color: #b7efef;
   color: var(--background-color);
   padding: 20px;
   border-radius: 8px;
@@ -421,7 +422,7 @@ button[type="submit"]:focus {
 /* Additions for Hero Section */
 .hero h1 {
   font-size: 3rem;
-  color: var(--secondary-color);
+  color: #004466;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -559,7 +560,8 @@ body, p {
 
 h1, h2, h3 {
   font-family: 'Barriecito', cursive;
-  color: #FFFFFF;
+  color: #004466;
+  background-color: #92e6f9;
 }
 
 /* Header Styles */
@@ -606,7 +608,7 @@ header nav a:hover {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 20px;
-  color: var(--primary-color);
+  color: #004466;
   background-color: var(--accent-color);
   text-decoration: none;
   font-weight: bold;
