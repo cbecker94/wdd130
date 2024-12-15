@@ -599,7 +599,7 @@ header nav a:hover {
 /* Call to Action */
 .cta {
   background-color: var(--primary-color);
-  color: var(--secondary-color);
+  color: #ffffff;
   text-align: center;
   padding: 20px;
 }
@@ -656,7 +656,7 @@ header nav a:hover {
 
 .grid-item h3 {
   font-size: 1.2rem;
-  color: var(--accent-color);
+  color: #1b1f23;
 }
 
 .grid-item p {
@@ -684,7 +684,7 @@ table th, table td {
 
 table th {
   background-color: var(--primary-color);
-  color: var(--secondary-color);
+  color: #fff;
 }
 
 table td {
