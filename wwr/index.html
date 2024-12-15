@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | White River Rafting</title>
+    <meta name="description" content="Welcome to White River Rafting! Explore thrilling rafting adventures for all skill levels.">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <img src="images/skelletons.jpg" alt="White Water Rafting Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="images/hero-image.webp" alt="Rafting Adventure" class="full-width">
+            <div class="hero-content">
+                <h1>Experience the Thrill of White Water Rafting</h1>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="newsletter">
+            <h2>Stay Updated!</h2>
+            <form action="newsletter_signup.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta">
+            <h2>Plan Your Next Adventure</h2>
+            <p>Discover our exciting trips tailored for every adventurer. Whether you’re a beginner or a seasoned rafter, we have the perfect experience for you.</p>
+            <a href="trips.html" class="btn">Explore Trips</a>
+        </section>
+
+        <!-- Site Purpose and Offerings -->
+        <section class="offerings">
+            <h2>Why Choose White River Rafting?</h2>
+            <div class="grid-layout">
+                <div class="grid-item">
+                    <img src="images/rafting-team.webp" alt="Team Adventure">
+                    <p>Our guided tours are perfect for building teamwork and creating unforgettable memories.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/serene-river.webp" alt="Serene River">
+                    <p>Enjoy serene river floats that showcase the breathtaking beauty of nature.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/thrill-rapids.webp" alt="Thrilling Rapids">
+                    <p>Challenge yourself with thrilling rapids that test your skills and courage.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2024 White Water Rafting Charity Becker</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com" target="_blank" rel="noopener">
+                <img src="images/facebook.webp" alt="Facebook">
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener">
+                <img src="images/tiktok.webp" alt="TikTok">
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener">
+                <img src="images/instagram.webp" alt="Instagram">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
